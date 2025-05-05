@@ -1,23 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ATS Resume Optimizer</title>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ATS Resume Optimizer</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 2em; background: #f5f5f5; }
-    .container { max-width: 600px; margin: auto; background: white; padding: 2em; border-radius: 8px; box-shadow: 0 0 10px #ccc; }
-    input[type="email"] { width: 80%; padding: 10px; margin-top: 1em; }
-    button { padding: 10px 20px; margin-top: 1em; background: #007bff; color: white; border: none; border-radius: 5px; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background: #1f2937;
+      color: #fff;
+      padding: 2em 1em;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    main {
+      padding: 2em 1em;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .features {
+      text-align: left;
+      margin-top: 1em;
+    }
+
+    .features li {
+      margin-bottom: 0.5em;
+    }
+
+    form {
+      margin-top: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input[type="email"] {
+      padding: 0.8em;
+      width: 100%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 1em;
+      font-size: 1em;
+    }
+
+    button {
+      padding: 0.8em 1.5em;
+      font-size: 1em;
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 2em;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Get Past the ATS</h1>
-    <p>Upload your resume and get optimized with the right keywords. Beat automated rejections.</p>
-    <input type="email" placeholder="Your email" />
-    <br />
-    <button>Join Waitlist</button>
-  </div>
+
+  <header>
+    <h1>ATS Resume Optimizer</h1>
+    <p>Get your resume past automated filters. Add the right keywords. Improve your chances of getting noticed.</p>
+  </header>
+
+  <main>
+    <ul class="features">
+      <li>✅ Injects job-specific keywords into your resume</li>
+      <li>✅ Designed to bypass Applicant Tracking Systems (ATS)</li>
+      <li>✅ Fast, simple, and effective</li>
+    </ul>
+
+    <form action="https://formspree.io/f/mayplvkk" method="POST">
+      <input type="email" name="email" placeholder="Enter your email to join waitlist" required />
+      <button type="submit">Join Waitlist</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 ATS Resume Optimizer. Built with no budget.
+  </footer>
+
 </body>
 </html>
